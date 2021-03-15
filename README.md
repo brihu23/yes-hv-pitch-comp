@@ -1,1 +1,0 @@
-# yes-hv-pitch-comp
