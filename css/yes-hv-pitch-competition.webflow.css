@@ -1792,14 +1792,6 @@ figcaption {
 
 .link-block {
   position: absolute;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -webkit-box-ordinal-group: 0;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
 }
 
 .grid-6 {
