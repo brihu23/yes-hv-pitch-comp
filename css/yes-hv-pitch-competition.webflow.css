@@ -1792,6 +1792,14 @@ figcaption {
 
 .link-block {
   position: absolute;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 .grid-6 {
@@ -2247,18 +2255,24 @@ figcaption {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .team1-person {
-  padding-right: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 ._3-col-2 {
@@ -2276,17 +2290,19 @@ figcaption {
   height: 120px;
   margin-bottom: 20px;
   border-radius: 8px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
-  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg'), -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg'), linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, auto;
 }
 
 .team1-image.team1-image7 {
-  background-image: url('../images/Person-Pic-72x.jpg');
+  background-image: url('../images/1534641526600.png');
   background-size: 120px;
 }
 
 .team1-image.team1-image4 {
-  background-image: url('../images/Person-Pic-42x.jpg');
+  background-image: url('../images/1592079829179.png');
   background-size: 120px;
 }
 
@@ -2301,7 +2317,7 @@ figcaption {
 }
 
 .team1-image.team1-image3 {
-  background-image: url('../images/Person-Pic-32x.jpg');
+  background-image: url('../images/1516156336953_1.png');
   background-size: 120px;
 }
 
@@ -2317,9 +2333,583 @@ figcaption {
 }
 
 .team1-image.team1-image5 {
+  background-image: url('../images/1516285115703.png');
+  background-position: 0px 0px;
+  background-size: 120px;
+}
+
+.team1-image.team1-image2-copy {
+  background-image: url('../images/1561489807916.png');
+  background-size: 120px;
+}
+
+.team1-image.yseas {
+  background-image: url('../images/yseas.png');
+  background-position: -15px -10px;
+  background-size: 140px;
+}
+
+.team1-image.courier {
+  background-image: url('../images/5af870a0-1693-4023-bd9f-e6daa0bcfc2d.png');
+  background-size: cover;
+}
+
+.team1-image.republic {
+  background-image: url('../images/bb3dytbcrggdg83ftlbz.png');
+  background-size: cover;
+}
+
+.team1-image.yseas-copy {
+  background-image: url('../images/accelerateyale.png');
+  background-position: -5px 0px;
+  background-size: cover;
+}
+
+.team1-image.courier-copy {
+  background-image: url('../images/harvard.png');
+  background-size: cover;
+}
+
+.team1-image.republic-copy {
+  background-image: url('../images/14711317_513682938822607_3116258855063646354_o.jpg');
+  background-size: contain;
+}
+
+.team1-image.yseas-copy {
+  background-image: url('../images/1_myB5Bv4DmAW_uQFHJckqHg2x.png');
+  background-position: 5px 45px;
+  background-size: 110px;
+  background-repeat: no-repeat;
+}
+
+.team1-image.courier-copy {
+  background-image: url('../images/14711317_513682938822607_3116258855063646354_o.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team1-image.yseas-copy-copy {
+  background-image: url('../images/accelerateyale.png');
+  background-position: -5px 0px;
+  background-size: cover;
+}
+
+.team1-image.courier-copy-copy {
+  background-image: url('../images/harvard.png');
+  background-size: cover;
+}
+
+.team1-image.courier-copy-copy-copy {
+  background-image: url('../images/harvard.png');
+  background-size: 120px;
+}
+
+.team1-image.courier-copy-copy-copy-copy {
+  background-image: url('../images/5f0fb284-e8c5-49a1-98d7-f24e42a64e19.png'), -webkit-gradient(linear, left top, left bottom, from(null), to(null));
+  background-image: url('../images/5f0fb284-e8c5-49a1-98d7-f24e42a64e19.png'), linear-gradient(180deg, null, null);
+}
+
+.team1-image.courier-copy-copy-copy-copy {
+  background-image: url('../images/5f0fb284-e8c5-49a1-98d7-f24e42a64e19.png');
+  background-position: 15px 15px;
+  background-size: 90px;
+  background-repeat: no-repeat;
+}
+
+.section-heading-copy {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #328ef6;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.team1-person-copy {
+  padding-right: 20px;
+}
+
+.team1-image-copy {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+}
+
+.team1-image-copy.team1-image7 {
+  background-image: url('../images/Person-Pic-72x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image4 {
+  background-image: url('../images/Person-Pic-42x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image1 {
+  background-image: url('../images/1573347192148.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image2 {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image3 {
+  background-image: url('../images/Person-Pic-32x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image8 {
+  background-image: url('../images/Person-Pic-82x.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.team1-image-copy.team1-image6 {
+  background-image: url('../images/Person-Pic-62x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image5 {
   background-image: url('../images/Person-Pic-52x.jpg');
   background-position: 0px 0px;
   background-size: 120px;
+}
+
+.team1-image-copy.team1-image2-copy {
+  background-image: url('../images/1516156336953_1.png');
+  background-position: 0px 0px;
+  background-size: auto;
+}
+
+.team1-image-copy {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+}
+
+.team1-image-copy.team1-image7 {
+  background-image: url('../images/Person-Pic-72x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image4 {
+  background-image: url('../images/Person-Pic-42x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image1 {
+  background-image: url('../images/1573347192148.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image2 {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image3 {
+  background-image: url('../images/Person-Pic-32x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image8 {
+  background-image: url('../images/Person-Pic-82x.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.team1-image-copy.team1-image6 {
+  background-image: url('../images/Person-Pic-62x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image5 {
+  background-image: url('../images/Person-Pic-52x.jpg');
+  background-position: 0px 0px;
+  background-size: 120px;
+}
+
+.team1-image-copy {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+}
+
+.team1-image-copy.team1-image7 {
+  background-image: url('../images/Person-Pic-72x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image4 {
+  background-image: url('../images/Person-Pic-42x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image1 {
+  background-image: url('../images/1573347192148.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image2 {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image3 {
+  background-image: url('../images/Person-Pic-32x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image8 {
+  background-image: url('../images/Person-Pic-82x.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.team1-image-copy.team1-image6 {
+  background-image: url('../images/Person-Pic-62x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image5 {
+  background-image: url('../images/Person-Pic-52x.jpg');
+  background-position: 0px 0px;
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image2-copy {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+}
+
+.team1-image-copy-copy.team1-image7 {
+  background-image: url('../images/Person-Pic-72x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image4 {
+  background-image: url('../images/Person-Pic-42x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image1 {
+  background-image: url('../images/1573347192148.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image2 {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image3 {
+  background-image: url('../images/Person-Pic-32x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image8 {
+  background-image: url('../images/Person-Pic-82x.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.team1-image-copy-copy.team1-image6 {
+  background-image: url('../images/Person-Pic-62x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image5 {
+  background-image: url('../images/Person-Pic-52x.jpg');
+  background-position: 0px 0px;
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image2-copy {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image2-copy-copy {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+}
+
+.team1-image-copy.team1-image7 {
+  background-image: url('../images/Person-Pic-72x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image4 {
+  background-image: url('../images/Person-Pic-42x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image1 {
+  background-image: url('../images/1573347192148.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image2 {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image3 {
+  background-image: url('../images/Person-Pic-32x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image8 {
+  background-image: url('../images/Person-Pic-82x.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.team1-image-copy.team1-image6 {
+  background-image: url('../images/Person-Pic-62x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy.team1-image5 {
+  background-image: url('../images/Person-Pic-52x.jpg');
+  background-position: 0px 0px;
+  background-size: 120px;
+}
+
+.team1-image-copy-copy {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+}
+
+.team1-image-copy-copy.team1-image7 {
+  background-image: url('../images/Person-Pic-72x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image4 {
+  background-image: url('../images/Person-Pic-42x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image1 {
+  background-image: url('../images/1573347192148.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image2 {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image3 {
+  background-image: url('../images/Person-Pic-32x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image8 {
+  background-image: url('../images/Person-Pic-82x.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.team1-image-copy-copy.team1-image6 {
+  background-image: url('../images/Person-Pic-62x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy.team1-image5 {
+  background-image: url('../images/Person-Pic-52x.jpg');
+  background-position: 0px 0px;
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.1)), to(rgba(17, 18, 18, 0.1)));
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.1), rgba(17, 18, 18, 0.1));
+}
+
+.team1-image-copy-copy-copy.team1-image7 {
+  background-image: url('../images/Person-Pic-72x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image4 {
+  background-image: url('../images/Person-Pic-42x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image1 {
+  background-image: url('../images/1573347192148.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image2 {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image3 {
+  background-image: url('../images/Person-Pic-32x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image8 {
+  background-image: url('../images/Person-Pic-82x.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.team1-image-copy-copy-copy.team1-image6 {
+  background-image: url('../images/Person-Pic-62x.jpg');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image5 {
+  background-image: url('../images/Person-Pic-52x.jpg');
+  background-position: 0px 0px;
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image2-copy {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image2-copy-copy {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team1-image-copy-copy-copy.team1-image2-copy-copy-copy {
+  background-image: url('../images/1574952536652.png');
+  background-size: 120px;
+}
+
+.team-1-cop {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.section-heading-copy {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #328ef6;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.section-heading-copy {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #328ef6;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.team1-people-row-copy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.section-heading-copy {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #328ef6;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.section-heading-copy-copy {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #328ef6;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.section-heading-red {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #fd493a;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.text-14-copy {
+  line-height: 24px;
+}
+
+.text-14-copy.text-14-60 {
+  opacity: 0.6;
+  text-align: left;
+}
+
+.text-14-copy.text-14-60-copy {
+  opacity: 0.6;
+  font-size: 10px;
+  text-align: left;
 }
 
 .section-heading-copy {
@@ -2778,6 +3368,94 @@ figcaption {
 
   .team1-image {
     display: block;
+  }
+
+  .team1-person-copy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    padding-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team1-image-copy {
+    display: block;
+  }
+
+  .team1-image-copy {
+    display: block;
+  }
+
+  .team1-image-copy {
+    display: block;
+  }
+
+  .team1-image-copy-copy {
+    display: block;
+  }
+
+  .team1-image-copy {
+    display: block;
+  }
+
+  .team1-image-copy-copy {
+    display: block;
+  }
+
+  .team1-image-copy-copy-copy {
+    display: block;
+  }
+
+  .team-1-cop {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    padding-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team1-people-row-copy {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -3339,6 +4017,10 @@ figcaption {
     padding-bottom: 0px;
   }
 
+  .text-14.text-14-60 {
+    text-align: center;
+  }
+
   .team2-profile-card {
     padding-right: 30px;
     padding-left: 30px;
@@ -3348,8 +4030,27 @@ figcaption {
     text-align: center;
   }
 
+  .team1-person {
+    padding-left: 0px;
+  }
+
   .section-heading-copy {
     font-size: 28px;
+  }
+
+  .team-1-cop {
+    padding-left: 0px;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .text-14-copy.text-14-60-copy {
+    text-align: center;
+  }
+
+  .section-heading-copy {
+    text-align: center;
   }
 }
 
@@ -3395,116 +4096,6 @@ figcaption {
   grid-row-start: 1;
   -ms-grid-row-span: 1;
   grid-row-end: 2;
-}
-
-#w-node-c1f4d571-698d-35c7-bd1c-23d70b0dd4dc-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: Area-2;
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -ms-grid-row-align: start;
-  align-self: start;
-}
-
-.grid-3>#w-node-c1f4d571-698d-35c7-bd1c-23d70b0dd4dc-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-}
-
-.grid-3-copy>#w-node-c1f4d571-698d-35c7-bd1c-23d70b0dd4dc-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-}
-
-.grid-6>#w-node-c1f4d571-698d-35c7-bd1c-23d70b0dd4dc-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-#w-node-_87481c5e-91b3-588e-6977-7fc9d0f6198f-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: Area;
-  -webkit-box-ordinal-group: -9998;
-  -webkit-order: -9999;
-  -ms-flex-order: -9999;
-  order: -9999;
-  -ms-grid-column-align: center;
-  justify-self: center;
-}
-
-.grid-2>#w-node-_87481c5e-91b3-588e-6977-7fc9d0f6198f-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.grid-3>#w-node-_87481c5e-91b3-588e-6977-7fc9d0f6198f-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.grid-3-copy>#w-node-_87481c5e-91b3-588e-6977-7fc9d0f6198f-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.grid-6>#w-node-_87481c5e-91b3-588e-6977-7fc9d0f6198f-cb6598a7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-@media screen and (max-width: 479px) {
-  .grid-3>#w-node-c1f4d571-698d-35c7-bd1c-23d70b0dd4dc-cb6598a7 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-  }
-
-  .grid-3>#w-node-_87481c5e-91b3-588e-6977-7fc9d0f6198f-cb6598a7 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .grid-5>#w-node-_87481c5e-91b3-588e-6977-7fc9d0f6198f-cb6598a7 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-}
-
-#w-node-_94966046-0e0b-397e-c678-26a4b4b88d7e-cb6598a7 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-grid-column-align: center;
-  justify-self: center;
-}
-
-#w-node-_827022fb-85fe-d788-6073-3e82a33bbf12-cb6598a7 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-grid-column-align: center;
-  justify-self: center;
-}
-
-#w-node-ba9b74c5-7bce-b3d0-4dff-04515572d0ec-cb6598a7 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-grid-column-align: center;
-  justify-self: center;
-}
-
-#w-node-_00f0f251-e7df-1682-2b42-582ff11836fd-cb6598a7 {
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
 }
 
 @media screen and (max-width: 991px) {
