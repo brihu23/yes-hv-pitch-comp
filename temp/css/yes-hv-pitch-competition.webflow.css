@@ -2265,7 +2265,7 @@ figcaption {
 }
 
 .team1-image.team1-image7 {
-  background-image: url('../images/Person-Pic-72x.jpg');
+  background-image: url('../images/727382.png');
   background-size: 120px;
 }
 
@@ -2303,6 +2303,10 @@ figcaption {
 .team1-image.team1-image5 {
   background-image: url('../images/Person-Pic-52x.jpg');
   background-position: 0px 0px;
+  background-size: 120px;
+}
+.team1-image.team1-image9 {
+  background-image: url('../images/727382.png');
   background-size: 120px;
 }
 
