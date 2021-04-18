@@ -1326,7 +1326,6 @@ figcaption {
   color: #fd493a;
   font-size: 30px;
   font-weight: 600;
-  text-align: left;
 }
 
 .label-copy {
@@ -2496,11 +2495,6 @@ figcaption {
   background-position: -5px 0px;
   background-size: cover;
   text-align: center;
-}
-
-.team1-image.team1-image7-copy {
-  background-image: url('../images/1554078530960.png');
-  background-size: 120px;
 }
 
 .section-heading-copy {
